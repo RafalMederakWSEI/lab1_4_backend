@@ -1,5 +1,6 @@
-﻿
-namespace lab1
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace lab1.Models
 {
     public class Student
     {
@@ -10,5 +11,15 @@ namespace lab1
         public string? Surname { get; set; }
 
         public string? Password { get; set; }
+    }
+
+    public class UserRole : IdentityRole<int>
+    {
+
+    }
+
+    public class UserEntity : IdentityUser<int>
+    {
+
     }
 }
